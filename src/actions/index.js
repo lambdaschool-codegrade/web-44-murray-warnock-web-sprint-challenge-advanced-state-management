@@ -1,6 +1,10 @@
 import axios from 'axios';
 
 export const START_FETCH_SMURF = "START_FETCH_SMURF";
+export const ADD_SMURF = "ADD_SMURF";
+export const FAIL_FETCH_SMURF = "FAIL_FETCH_SMURF";
+export const SET_VALUE_TO_ERROR_MESSAGE = "SET_VALUE_TO_ERROR_MESSAGE";
+export const SUCCESS_FETCH_SMURF = "SUCCESS_FETCH_SMURF";
 
 export const fetchStart = ()=> {
     return({type: START_FETCH_SMURF});
