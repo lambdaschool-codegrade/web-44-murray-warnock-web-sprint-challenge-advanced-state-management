@@ -27,8 +27,8 @@ const mapStateToProps = state => {
     return(
     <div className="listContainer">
 
-        {smurfs.map((smurf, id) => (
-                    <Smurf smurf={smurf}/>  
+        {smurfs.map((smurf) => (
+            <Smurf key={smurf.id} smurf={smurf}/>  
         ))}   
     </div>);
 }
