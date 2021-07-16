@@ -26,7 +26,6 @@ const mapStateToProps = state => {
 //2. Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
     return(
     <div className="listContainer">
-
         {smurfs.map((smurf) => (
             <Smurf key={smurf.id} smurf={smurf}/>  
         ))}   

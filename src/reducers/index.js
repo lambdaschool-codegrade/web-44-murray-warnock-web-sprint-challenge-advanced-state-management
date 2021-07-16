@@ -56,7 +56,3 @@ const reducer = (state=initialState, action)=>{
 }
 
 export default reducer;
-
-
-
-//7. Add in a reducer case that adds in a value to the error message.

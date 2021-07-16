@@ -11,7 +11,7 @@ import { fetchSmurfs }  from './actions/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 // Connect Redux store
-// (Had to change App to a functional componenet in order to get this to work.)
+// (Had to change App to a functional component in order to get this to work.)
 const mapStateToProps = (state) => {
   return {
     smurfs: state.smurfs,
@@ -22,7 +22,7 @@ const mapStateToProps = (state) => {
 
 const App = (props) => {
 //2. Call the fetchSmurfs action when the component first loads.
-  const {  fetchSmurfs } = props;
+  const { fetchSmurfs } = props;
   useEffect(() => {
       fetchSmurfs();
   }, [fetchSmurfs]);
