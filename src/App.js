@@ -22,9 +22,10 @@ const mapStateToProps = (state) => {
 
 const App = (props) => {
 //2. Call the fetchSmurfs action when the component first loads.
+  const {  fetchSmurfs } = props;
   useEffect(() => {
-      props.fetchSmurfs();
-  }, []);
+      fetchSmurfs();
+  }, [fetchSmurfs]);
 
   return (
     <div className="App">
